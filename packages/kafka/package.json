@@ -1,0 +1,14 @@
+{
+  "name": "@tutorials/kafka",
+  "version": "1.0.0",
+  "description": "This is an npm workspace for learning Kafka",
+  "scripts": {
+    "build:ts": "echo 'Transpilling the kafka workspace...' && tsc",
+    "start-consumer": "ts-node ./lib/scripts/startConsumer.ts",
+    "start-producer": "ts-node ./lib/scripts/startProducer.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  }
+}

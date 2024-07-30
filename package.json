@@ -1,0 +1,23 @@
+{
+  "name": "@tutorials/root",
+  "version": "1.0.0",
+  "author": "Ebenezer Mathebula",
+  "description": "This is a package with npm workspaces. Each workspace is meant to learn something new.",
+  "scripts": {
+    "format": "prettier './**/*.{js,ts}' --write",
+    "build:ts": "npm run build:ts --workspaces --if-present",
+    "kafka-start-consumer": "npm run start-consumer --workspaces --if-present",
+    "kafka-start-producer": "npm run start-producer --workspaces --if-present",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "packages/kafka",
+    "packages/websockets"
+  ],
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.5.4"
+  }
+}

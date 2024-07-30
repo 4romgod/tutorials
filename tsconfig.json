@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "target": "es2022",
+    "module": "commonjs",
+    "strict": true,
+    "noImplicitAny": false,
+  },
+  "include": ["packages/**/*"]
+}
